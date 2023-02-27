@@ -25,80 +25,81 @@ export default class Proyects extends Component {
         };
 
         return (
-            <div className="w-12/12 mx-auto">
+            <div className="relative mx-auto w-12/12">
+                <div className="relative ">
+                <h2 className='max-w-xs mb-20 text-6xl text-white'>Proyects</h2>
+                <div className="w-full h-1 mx-auto bg-gray-100 border-0 rounded dark:bg-gray-700 absolute top-[227%]"></div>
+                </div>
 
-                <h2 className='text-white text-6xl mb-20'>Proyects</h2>
-
-                <Slider className="w-40" {...settings}>
-                    <div className="flex justify-center items-center">
-                        <img className="p-20 bg-[#262626]" src={project1} alt='img' />
-                        <h3 className="text-white mb-1 text-center text-2xl">Onmifood Proyect</h3>
-                        <p className="text-[#858792] text-center mb-5">React / Food / Template</p>
-                        <div className="mb-5 flex justify-center gap-x-10">
+                <Slider className="w-40 border-2 border-white" {...settings}>
+                    <div className="flex items-center justify-center">
+                        <h3 className="pt-5 text-3xl text-center tracking-wide text-white bg-[#262626]">Onmifood Proyect</h3>
+                        <img className="pb-20 pt-5 px-20 bg-[#262626]" src={project1} alt='img' />
+                        <div className="flex justify-center mt-4 mb-2 gap-x-10">
                             <a className="btn" target='_blank' rel="noreferrer" href="https://omnii-foood.netlify.app/">Site</a>
                             <a className="btn" target='_blank' rel="noreferrer" href="https://github.com/itunz1/Omnifood-project">Code</a>
                         </div>
+                        <p className="text-[#858792] text-center">React / Food / Template</p>
                     </div>
 
-                    <div className="flex justify-center items-center">
-                        <img className="p-20 bg-[#262626]" src={project2} alt='img' />
-                        <h3 className="text-white mb-1 text-center text-2xl">VideoGames Proyect</h3>
-                        <p className="text-[#858792] text-center mb-5">React / Food / Template</p>
-                        <div className="mb-5 flex justify-center gap-x-10">
+                    <div className="flex items-center justify-center">
+                        <h3 className="pt-5 text-3xl text-center tracking-wide text-white bg-[#262626]">VideoGames Proyect</h3>
+                        <img className="pb-20 pt-5 px-20 bg-[#262626]" src={project2} alt='img' />
+                        <div className="flex justify-center mt-4 mb-2 gap-x-10">
                             <a className="btn" target='_blank' rel="noreferrer" href="https://videogames-beta.vercel.app/">Site</a>
                             <a className="btn" target='_blank' rel="noreferrer" href="https://github.com/itunz1/VideoGames">Code</a>
                         </div>
+                        <p className="text-[#858792] text-center">React / Food / Template</p>
                     </div>
 
-                    <div className="flex justify-center items-center">
-                        <img className="p-20 bg-[#262626]" src={project4} alt='img' />
-                        <h3 className="text-white mb-1 text-center text-2xl">Pokemon Proyect</h3>
-                        <p className="text-[#858792] text-center mb-5">React / Food / Template</p>
-                        <div className="mb-5 flex justify-center gap-x-10">
+                    <div className="flex items-center justify-center">
+                        <h3 className="pt-5 text-3xl text-center tracking-wide text-white bg-[#262626]">Pokemon Proyect</h3>
+                        <img className="pb-20 pt-5 px-20 bg-[#262626]" src={project4} alt='img' />
+                        <div className="flex justify-center mt-4 mb-2 gap-x-10">
                             <a className="btn" target='_blank' rel="noreferrer" href="https://pokemon-xi-green.vercel.app/">Site</a>
                             <a className="btn" target='_blank' rel="noreferrer" href="https://github.com/itunz1/PokemonPI">Code</a>
                         </div>
+                        <p className="text-[#858792] text-center">React / Food / Template</p>
                     </div>
 
-                    <div className="flex justify-center items-center">
-                        <img className="p-20 bg-[#262626]" src={project5} alt='img' />
-                        <h3 className="text-white mb-1 text-center text-2xl">Ecommerce Proyect</h3>
-                        <p className="text-[#858792] text-center mb-5">React / Food / Template</p>
-                        <div className="mb-5 flex justify-center gap-x-10">
+                    <div className="flex items-center justify-center">
+                        <h3 className="pt-5 text-3xl text-center tracking-wide text-white bg-[#262626]">Ecommerce Proyect</h3>
+                        <img className="pb-20 pt-5 px-20 bg-[#262626]" src={project5} alt='img' />
+                        <div className="flex justify-center mt-4 mb-2 gap-x-10">
                             <a className="btn" target='_blank' rel="noreferrer" href="https://carsmarket.vercel.app/">Site</a>
                             <a className="btn" target='_blank' rel="noreferrer" href="https://github.com/itunz1/carsmarket">Code</a>
                         </div>
+                        <p className="text-[#858792] text-center">React / Food / Template</p>
                     </div>
 
-                    <div className="flex justify-center items-center">
-                        <img className="p-20 bg-[#262626]" src={project3} alt='img' />
-                        <h3 className="text-white mb-1 text-center text-2xl">Utility</h3>
-                        <p className="text-[#858792] text-center mb-5">React / Food / Template</p>
-                        <div className="mb-5 flex justify-center gap-x-10">
+                    <div className="flex items-center justify-center">
+                        <h3 className="pt-5 text-3xl text-center tracking-wide text-white bg-[#262626]">Utility</h3>
+                        <img className="pb-20 pt-5 px-20 bg-[#262626]" src={project3} alt='img' />
+                        <div className="flex justify-center mt-4 mb-2 gap-x-10">
                             <a className="btn" target='_blank' rel="noreferrer" href="https://utility-components.netlify.app/">Site</a>
                             <a className="btn" target='_blank' rel="noreferrer" href="https://github.com/itunz1/Utility-Aps">Code</a>
                         </div>
+                        <p className="text-[#858792] text-center">React / Food / Template</p>
                     </div>
 
-                    <div className="flex justify-center items-center">
-                        <img className="p-20 bg-[#262626]" src={project6} alt='img' />
-                        <h3 className="text-white mb-1 text-center text-2xl">PostIT Proyect</h3>
-                        <p className="text-[#858792] text-center mb-5">React / Food / Template</p>
-                        <div className="mb-5 flex justify-center gap-x-10">
+                    <div className="flex items-center justify-center">
+                        <h3 className="pt-5 text-3xl text-center tracking-wide text-white bg-[#262626]">PostIT Proyect</h3>
+                        <img className="pb-20 pt-5 px-20 bg-[#262626]" src={project6} alt='img' />
+                        <div className="flex justify-center mt-4 mb-2 gap-x-10">
                             <a className="btn" target='_blank' rel="noreferrer" href="https://postsz-comments.netlify.app/">Site</a>
                             <a className="btn" target='_blank' rel="noreferrer" href="https://github.com/itunz1/Post-Comment-proytect">Code</a>
                         </div>
+                        <p className="text-[#858792] text-center">React / Food / Template</p>
                     </div>
 
-                    <div className="flex justify-center items-center">
-                        <img className="p-20 bg-[#262626]" src={project7} alt='img' />
-                        <h3 className="text-white mb-1 text-center text-2xl">Glass Design</h3>
-                        <p className="text-[#858792] text-center mb-5">React / Food / Template</p>
-                        <div className="mb-5 flex justify-center gap-x-10">
+                    <div className="flex items-center justify-center">
+                        <h3 className="pt-5 text-3xl text-center tracking-wide text-white bg-[#262626]">Glass Design</h3>
+                        <img className="pb-20 pt-5 px-20 bg-[#262626]" src={project7} alt='img' />
+                        <div className="flex justify-center mt-4 mb-2 gap-x-10">
                             <a className="btn" target='_blank' rel="noreferrer" href="https://github.com/itunz1/Glass-website">Code</a>
                         </div>
+                        <p className="text-[#858792] text-center">React / Food / Template</p>
                     </div>
-
                 </Slider>
             </div>
         );
