@@ -15,8 +15,9 @@ import {
 
 export default function Skills() {
     return (
-        <div>
-            <h2 className='mb-10 text-6xl text-white'>Skills</h2>
+        <div className='relative'>
+            <h2 className='mb-20 relative z-10 bg-[#262626] w-min py-2 px-5 text-6xl text-white border-[1px] border-[rgba(255,255,255,.5)] shadow-3xl shadow-[inset_0_0_9px_rgb(255 255 255 / 70%)] font-normal'>Skills</h2>
+            <div className="w-full absolute h-[1px] bg-white top-[40px]"></div>
             <div className='grid grid-cols-2'>
                 <h3 className='w-10/12 text-2xl text-center text-white'>Special Skills</h3>
                 <h3 className='mb-8 text-2xl text-center text-white'>Tech Skills</h3>
@@ -24,43 +25,43 @@ export default function Skills() {
 
             <div className='flex justify-between'>
                 <div className='w-5/12 '>
-                    <div className='px-11 pb-12 pt-11 mb-6 bg-[#2a2c39] shadow-xl shadow-current-500/40 '>
-                        <div className="mb-6 text-base font-medium text-[#858792] flex justify-between">
+                    <div className='shadow-xl special-skillbox shadow-current-500/40'>
+                        <div className="special-box">
                             <div>Comunication</div>
                             <div>75%</div>
                         </div>
-                        <div className="w-full h-2 bg-gray-200 rounded-full dark:bg-gray-700">
-                            <div className="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full h-2" style={{ width: "75%" }}></div>
+                        <div className="progres">
+                            <div className="progres-bar" style={{ width: "75%" }}></div>
                         </div>
                     </div>
 
-                    <div className='px-11 pb-12 pt-11 mb-6 bg-[#2a2c39] shadow-xl shadow-current-500/40'>
-                        <div className="mb-6 text-base font-medium text-[#858792] flex justify-between">
+                    <div className='shadow-xl special-skillbox shadow-current-500/40'>
+                        <div className="special-box">
                             <div>Leadership</div>
                             <div>70%</div>
                         </div>
-                        <div className="w-full h-2 bg-gray-200 rounded-full dark:bg-gray-700">
-                            <div className="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full h-2" style={{ width: "70%" }}></div>
+                        <div className="progres">
+                            <div className="progres-bar" style={{ width: "70%" }}></div>
                         </div>
                     </div>
 
-                    <div className='px-11 pb-12 pt-11 mb-6 bg-[#2a2c39] shadow-xl shadow-current-500/40'>
-                        <div className="mb-6 text-base font-medium text-[#858792] flex justify-between">
+                    <div className='shadow-xl special-skillbox shadow-current-500/40'>
+                        <div className="special-box">
                             <div>Teamwork</div>
                             <div>90%</div>
                         </div>
-                        <div className="w-full h-2 bg-gray-200 rounded-full dark:bg-gray-700">
-                            <div className="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full h-2" style={{ width: "90%" }}></div>
+                        <div className="progres">
+                            <div className="progres-bar" style={{ width: "90%" }}></div>
                         </div>
                     </div>
 
-                    <div className='px-11 pb-12 pt-11 bg-[#2a2c39] shadow-xl shadow-current-500/40'>
-                        <div className="mb-6 text-base font-medium text-[#858792] flex justify-between">
+                    <div className='shadow-xl special-skillbox shadow-current-500/40'>
+                        <div className="special-box">
                             <div>Flexibility</div>
                             <div>80%</div>
                         </div>
-                        <div className="w-full h-2 bg-gray-200 rounded-full dark:bg-gray-700">
-                            <div className="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full h-2" style={{ width: "80%" }}></div>
+                        <div className="progres">
+                            <div className="progres-bar" style={{ width: "80%" }}></div>
                         </div>
                     </div>
                 </div>
