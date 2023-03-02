@@ -115,7 +115,7 @@ export default function Contact() {
   return (
     <div>
       <ToastContainer limit={1} />
-      <h3 className='mb-16 text-5xl text-center text-white'>Contact Me</h3>
+      <h3 className='mb-16 text-5xl font-bold text-center text-white'>Contact Me</h3>
       <div className='flex max-h-[700px]'>
         <div className='py-20 px-14 bg-[#2a2c39] lg:w-[35%]'>
           <ul>

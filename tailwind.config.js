@@ -11,7 +11,7 @@ module.exports = {
         cormorant: 'Cormorant Garamond',
       },
       boxShadow: {
-        '3xl': '0 0 9px rgb(255 255 255 / 70%)'
+        'custom': 'inset 0 0 9px rgb(255 255 255 / 70%)'
       },
       debugScreens: {
         position: ['top', 'left'],

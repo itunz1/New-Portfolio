@@ -62,7 +62,7 @@ code {
 
   /* Proyect Section */
   .proyect-title {
-    @apply pt-5 text-3xl text-center tracking-wide text-white bg-[#262626];
+    @apply pt-5 text-3xl text-center tracking-wide text-white bg-[#262626] font-medium;
   }
 
   .proyect-img {

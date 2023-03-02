@@ -27,23 +27,23 @@ export default class Proyects extends Component {
         return (
             <div className="mx-auto w-12/12">
                 <div className="relative">
-                <h2 className='relative z-10 bg-[#2a2c39] w-min p-2 mb-20 text-6xl text-white border-[1px] border-[rgba(255,255,255,.5)] shadow-3xl shadow-[inset_0_0_9px_rgb(255 255 255 / 70%)] font-normal'>Proyects</h2>
-                <div className="w-full absolute h-[1px] bg-white top-[50%]"></div>
+                <h2 className='relative z-10 bg-[#2a2c39] w-min px-4 py-2 mb-20 text-6xl text-white border-[1px] border-[rgba(255,255,255,.5)] shadow-custom font-medium rounded-xl'>Proyects</h2>
+                <div className="w-full absolute h-[1px] top-[50%] bg-[rgba(255,255,255,.5)]"></div>
                 </div>
 
                 <Slider className="w-40 border-2 border-white" {...settings}>
                     <div className="flex items-center justify-center">
-                        <h3 className="proyect-title">Onmifood Proyect</h3>
+                        <h3 className="proyect-title">Onmifood</h3>
                         <img className="proyect-img" src={project1} alt='img' />
                         <div className="btn-container">
                             <a className="btn" target='_blank' rel="noreferrer" href="https://omnii-foood.netlify.app/">Site</a>
                             <a className="btn" target='_blank' rel="noreferrer" href="https://github.com/itunz1/Omnifood-project">Code</a>
                         </div>
-                        <p className="text-[#858792] text-center">HTML-CSS / Food Website / Template</p>
+                        <p className="text-[#858792] text-center">HTML-CSS / Food Website / Course /Template</p>
                     </div>
 
                     <div className="flex items-center justify-center">
-                        <h3 className="proyect-title">VideoGames Proyect</h3>
+                        <h3 className="proyect-title">VideoGames</h3>
                         <img className="proyect-img" src={project2} alt='img' />
                         <div className="btn-container">
                             <a className="btn" target='_blank' rel="noreferrer" href="https://videogames-beta.vercel.app/">Site</a>
@@ -53,7 +53,7 @@ export default class Proyects extends Component {
                     </div>
 
                     <div className="flex items-center justify-center">
-                        <h3 className="proyect-title">Pokemon Proyect</h3>
+                        <h3 className="proyect-title">Pokemon</h3>
                         <img className="proyect-img" src={project4} alt='img' />
                         <div className="btn-container">
                             <a className="btn" target='_blank' rel="noreferrer" href="https://pokemon-xi-green.vercel.app/">Site</a>
@@ -63,7 +63,7 @@ export default class Proyects extends Component {
                     </div>
 
                     <div className="flex items-center justify-center">
-                        <h3 className="proyect-title">Ecommerce Proyect</h3>
+                        <h3 className="proyect-title">Ecommerce</h3>
                         <img className="proyect-img" src={project5} alt='img' />
                         <div className="btn-container">
                             <a className="btn" target='_blank' rel="noreferrer" href="https://carsmarket.vercel.app/">Site</a>
@@ -83,7 +83,7 @@ export default class Proyects extends Component {
                     </div>
 
                     <div className="flex items-center justify-center">
-                        <h3 className="proyect-title">PostIT Proyect</h3>
+                        <h3 className="proyect-title">PostIT</h3>
                         <img className="proyect-img" src={project6} alt='img' />
                         <div className="btn-container">
                             <a className="btn" target='_blank' rel="noreferrer" href="https://postsz-comments.netlify.app/">Site</a>

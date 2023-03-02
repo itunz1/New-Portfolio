@@ -8,14 +8,14 @@ import Contact from '../Contact/Contact';
 
 function Home() {
   return (
-    <div className='container max-w-full min-h-screen mx-auto'>
-      <div className='bg-[#252734]'>
-        <header className='bg-[#262626]  max-w-7xl mx-auto'>
-          <Nav />
+    <div className='container max-w-full mx-auto'>
+      <div className='bg-[#252734] md:h-[1100px] lg:h-[750px] xl:min-h-screen overflow-hidden'>
+        <header className='relative mx-auto xl:min-h-screen max-w-7xl'>
+          <Nav className='py-4' />
           <HeroSection />
         </header>
       </div>
-      <div className='bg-[#2a2c39] z-10 relative'>
+      <div className='bg-[#2a2c39]'>
         <section className='max-w-6xl py-24 mx-auto '>
           <About />
         </section>
