@@ -45,7 +45,7 @@ code {
 
   /* Skill Section */
   .special-skillbox {
-    @apply px-11 pb-12 pt-11 mb-6 bg-[#2a2c39];
+    @apply px-11 pt-5 pb-8 mb-4 md:px-11 md:pb-12 md:pt-11 md:mb-6 bg-[#2a2c39];
   }
 
   .special-box {

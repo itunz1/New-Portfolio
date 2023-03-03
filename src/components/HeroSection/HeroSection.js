@@ -28,7 +28,7 @@ export default function HeroSection() {
                 <span className='w-[700px] h-[700px] absolute border-[rgba(255,255,255,.4)] border-[1px] rounded-full block top-[74%] left-[-20%] opacity-100'></span>
             </div>
 
-            <div className='absolute w-[180px] top-[3rem] left-[23%] sm:w-[315px] sm:left-[25%] md:left-[auto] md:right-[35%] md:mt-1 lg:mt-auto lg:top-[2%] lg:right-[25%] lg:w-[315px] xl:top-[8%] xl:w-auto xl:right-[15%] 2xl:right-[10%] 2xl:top-[1%] 2xl:left-auto 2xl:bottom-0'>
+            <div className='absolute w-[180px] top-[3rem] left-[23%] sm:w-[315px] sm:left-[25%] sm:top-3 md:top-[36px] md:left-[auto] md:right-[35%] md:mt-1 lg:mt-auto lg:top-[2%] lg:right-[25%] lg:w-[315px] xl:top-[8%] xl:w-auto xl:right-[15%] 2xl:right-[10%] 2xl:top-[1%] 2xl:left-auto 2xl:bottom-0'>
                 <div>
                     <img className='relative z-10 mr-10 pt-28absolute' src={jose} alt='jose img'/>
                     <div>

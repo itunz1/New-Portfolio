@@ -22,7 +22,7 @@ function Home() {
       </div>
 
       <div className='bg-[#252734]' id='skills'>
-        <section className='max-w-6xl py-24 mx-auto'>
+        <section className='relative max-w-6xl py-24 mx-auto'>
           <Skills />
         </section>
       </div>
