@@ -73,4 +73,9 @@ code {
     @apply flex justify-center mt-4 mb-2 gap-x-10;
   }
 
+  /* Contact Section */
+  .contact-info {
+    @apply py-5 pl-2 mb-5 lg:mb-5 lg:py-7 lg:px-9 bg-[#252734] mt-5;
+  }
+
   
