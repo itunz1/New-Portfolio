@@ -21,14 +21,14 @@ function Home() {
         </section>
       </div>
 
-      <div className='bg-[#252734]' id='skills'>
+      <div className='bg-[#252734] overflow-x-hidden' id='skills'>
         <section className='relative max-w-6xl py-24 mx-auto'>
           <Skills />
         </section>
       </div>
 
-      <div className='bg-[#2a2c39]' id='proyects'>
-        <section className='max-w-6xl py-24 mx-auto '>
+      <div className='bg-[#2a2c39] overflow-x-hidden' id='proyects'>
+        <section className='max-w-6xl py-24 mx-auto'>
           <Proyects />
         </section>
       </div>

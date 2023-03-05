@@ -12,12 +12,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* .slick-slide {
+.slick-slide > div {
   margin: 0 10px;
 }
 .slick-list {
   margin: 0 -10px;
-} */
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -69,7 +69,7 @@ code {
 
   /* Proyect Section */
   .proyect-title {
-    @apply pb-6 text-3xl font-medium tracking-wide text-center text-white ;
+    @apply pb-6 text-xl font-medium tracking-wide text-center text-white sm:text-2xl lg:text-3xl ;
   }
 
   .proyect-img {
@@ -78,6 +78,10 @@ code {
 
   .btn-container {
     @apply flex justify-center items-center  gap-x-10 bg-[#262626] border-x-4 mx-auto pt-7;
+  }
+
+  .sub-title {
+    @apply text-[#858792] text-center bg-[#262626] border-x-4 mx-auto border-b-4 pb-8 text-sm md:text-sm lg:text-base;
   }
 
   /* Contact Section */
