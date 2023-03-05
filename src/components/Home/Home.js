@@ -33,7 +33,7 @@ function Home() {
         </section>
       </div>
 
-      <div className='bg-[#252734]' id='contact'>
+      <div className='bg-[#252734] h-fit' id='contact'>
         <section className='max-w-6xl py-24 mx-auto'>
           <Contact />
         </section>

@@ -174,7 +174,7 @@ export default function Contact() {
                 placeholder='Subject' />
 
               <label className='mb-1 md:mb-2'>Message</label>
-              <textarea className='text-sm lg:text-base h-[230px] md:max-h-[300px] md:h-[240px] bg-transparent border-[1px] border-[rgba(255,255,255,.1)] p-5'
+              <textarea className='text-sm max-h-96 lg:text-base h-[230px] md:max-h-[300px] md:h-[240px] bg-transparent border-[1px] border-[rgba(255,255,255,.1)] p-5'
                 name='message'
                 onChange={handleChange}
                 placeholder='Message' />

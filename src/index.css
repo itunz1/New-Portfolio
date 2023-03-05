@@ -12,6 +12,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* .slick-slide {
+  margin: 0 10px;
+}
+.slick-list {
+  margin: 0 -10px;
+} */
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -62,15 +69,15 @@ code {
 
   /* Proyect Section */
   .proyect-title {
-    @apply pt-5 text-3xl text-center tracking-wide text-white bg-[#262626] font-medium;
+    @apply pb-6 text-3xl font-medium tracking-wide text-center text-white ;
   }
 
   .proyect-img {
-    @apply pb-20 pt-5 px-20 bg-[#262626];
+    @apply bg-[#262626] border-t-4 border-x-4 mx-auto w-full border-white;
   }
 
   .btn-container {
-    @apply flex justify-center mt-4 mb-2 gap-x-10;
+    @apply flex justify-center items-center  gap-x-10 bg-[#262626] border-x-4 mx-auto pt-7;
   }
 
   /* Contact Section */
