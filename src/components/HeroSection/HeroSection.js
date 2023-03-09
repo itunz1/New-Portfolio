@@ -4,16 +4,22 @@ import { BiDownload } from 'react-icons/bi';
 import { CiFacebook } from 'react-icons/ci';
 import { FiGithub } from 'react-icons/fi';
 import { BsLinkedin } from 'react-icons/bs';
+import resumen from '../../images/CVResumeEn.pdf'
 
 
 export default function HeroSection() {
+
+    const resume = () => {
+        window.open(resumen)
+    }
+
     return (
         <div className='bg-[#252734]'>
             <div className='text-white absolute ml-5 top-[28rem] sm:top-[38rem] md:top-auto md:bottom-[-900px] md:ml-32 lg:ml-24 lg:bottom-auto lg:w-[400px] lg:relative xl:w-full xl:ml-32 w-fit xl:mt-16 2xl:ml-14 2xl:mt-32 '>
                 <h3 className='mb-1 text-4xl font-bold tracking-tight sm:text-4xl lg:mt-28 lg:text-5xl xl:text-7xl xl:mt-0 2xl:mt-16 2xl:text-8xl'>Hello! I’m</h3>
                 <h2 className='font-bold tracking-normal text-6xl lg:text-[80px] xl:tracking-tight xl:text-[7.5rem] 2xl:text-[9rem] 2xl:mt-[-20px] '>Jose Lezama</h2>
                 <p className='mt-8 mb-8 md:mb-8 lg:mb-12 text-base text-[#858792] lg:text-lg xl:text-xl 2xl:text-2xl'>Full Stack Web Developer</p>
-                <a className=' border-[1px] border-[#3b3d49] hover:bg-[#85879215] p-4 text-sm w-fit inline-block rounded-full transition duration-500 ease-in-out hover:-translate-y-1 md:text-base md:px-10 md:py-4 xl:text-lg xl:px-12 xl:py-7' href='/'>Get Resume <BiDownload className='inline-block h-5 text-2xl font-bold' /></a>
+                <a className=' border-[1px] border-[#3b3d49] hover:bg-[#85879215] p-4 text-sm w-fit inline-block rounded-full transition duration-500 ease-in-out hover:-translate-y-1 md:text-base md:px-10 md:py-4 xl:text-lg xl:px-12 xl:py-7' onClick={resume} href='/'>Get Resume <BiDownload className='inline-block h-5 text-2xl font-bold' /></a>
             </div>
 
             <div className='hidden'>

@@ -47,7 +47,7 @@ export default function Nav() {
                             smooth={true}
                             offset={-70}
                             duration={800}>
-                            <span className='inline-flex items-center gap-1 text-lg font-medium text-white hover:text-[#fff59d] cursor-pointer'>< FaRegUser className='text-sm' />About</span>
+                            <span className='inline-flex items-center gap-1 text-lg font-medium text-white hover:text-[#fff59d]'>< FaRegUser className='text-sm' />About</span>
                         </Link>
 
                         <Link to="skills"
@@ -55,7 +55,7 @@ export default function Nav() {
                             smooth={true}
                             offset={-70}
                             duration={800}>
-                        <span className='inline-flex items-center gap-1 text-lg font-medium text-white cursor-pointer hover:text-gray-900'><FaCode className='text-base' />Skills</span>
+                        <span className='inline-flex items-center gap-1 text-lg font-medium text-white cursor-pointer hover:text-[#fff59d]'><FaCode className='text-base' />Skills</span>
                         </Link>
                         
                         <Link to="proyects"
@@ -63,7 +63,7 @@ export default function Nav() {
                             smooth={true}
                             offset={-20}
                             duration={800}>
-                        <span className='inline-flex items-center gap-1 text-lg font-medium text-white cursor-pointer hover:text-gray-900'><FaChalkboard className='text-base' />Proyects</span>
+                        <span className='inline-flex items-center gap-1 text-lg font-medium text-white cursor-pointer hover:text-[#fff59d]'><FaChalkboard className='text-base' />Proyects</span>
                         </Link>
 
                         <Link to="contact"
@@ -71,7 +71,7 @@ export default function Nav() {
                             smooth={true}
                             offset={-20}
                             duration={800}>
-                        <span className='inline-flex items-center gap-1 text-lg font-medium text-white cursor-pointer hover:text-gray-900'> <FaAddressBook className='text-sm' />Contact</span>
+                        <span className='inline-flex items-center gap-1 text-lg font-medium text-white cursor-pointer hover:text-[#fff59d]'> <FaAddressBook className='text-sm' />Contact</span>
                         </Link>
                     </Popover.Group>
 

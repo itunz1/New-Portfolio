@@ -81,7 +81,7 @@ code {
   }
 
   .sub-title {
-    @apply text-[#858792] text-center bg-[#262626] border-x-4 mx-auto border-b-4 pb-8 text-sm md:text-sm lg:text-base;
+    @apply text-[#858792] text-center bg-[#262626] border-x-4 mx-auto border-b-4 pb-8 text-sm md:text-sm lg:text-base xl:text-lg;
   }
 
   /* Contact Section */
