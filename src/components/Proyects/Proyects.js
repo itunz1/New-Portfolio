@@ -65,27 +65,27 @@ export default class Proyects extends Component {
                             <a className="btn" target='_blank' rel="noreferrer" href="https://omnii-foood.netlify.app/">Site</a>
                             <a className="btn" target='_blank' rel="noreferrer" href="https://github.com/itunz1/Omnifood-project">Code</a>
                         </div>
-                        <p className="sub-title">HTML-CSS / Food Website / Course /Template</p>
+                        <p className="sub-title">HTML-CSS Javascript / Food Responsive Website </p>
                     </div>
 
                     <div className="flex items-center justify-center ">
                         <h3 className="proyect-title">VideoGames</h3>
                         <img className="proyect-img" src={project2} alt='img' />
                         <div className="btn-container">
-                            <a className="btn" target='_blank' rel="noreferrer" href="https://videogames-beta.vercel.app/">Site</a>
+                            {/* <a className="btn" target='_blank' rel="noreferrer" href="https://videogames-beta.vercel.app/">Site</a> */}
                             <a className="btn" target='_blank' rel="noreferrer" href="https://github.com/itunz1/VideoGames">Code</a>
                         </div>
-                        <p className="sub-title">React-Redux-CSS-PostgresSQL / App / Personal / Template</p>
+                        <p className="sub-title">Css Javascript React Redux / PostgreSQL Express AWS</p>
                     </div>
 
                     <div className="flex items-center justify-center">
                         <h3 className="proyect-title">Pokemon</h3>
                         <img className="proyect-img" src={project4} alt='img' />
                         <div className="btn-container">
-                            <a className="btn" target='_blank' rel="noreferrer" href="https://pokemon-xi-green.vercel.app/">Site</a>
+                            {/* <a className="btn" target='_blank' rel="noreferrer" href="https://pokemon-xi-green.vercel.app/">Site</a> */}
                             <a className="btn" target='_blank' rel="noreferrer" href="https://github.com/itunz1/PokemonPI">Code</a>
                         </div>
-                        <p className="sub-title">React-Redux-CSS-PostgresSQL / App / Bootcamp</p>
+                        <p className="sub-title">Css Javascript React Redux / PostgreSQL Express AWS</p>
                     </div>
 
                     <div className="flex items-center justify-center">
@@ -95,7 +95,7 @@ export default class Proyects extends Component {
                             <a className="btn" target='_blank' rel="noreferrer" href="https://carsmarket.vercel.app/">Site</a>
                             <a className="btn" target='_blank' rel="noreferrer" href="https://github.com/itunz1/carsmarket">Code</a>
                         </div>
-                        <p className="sub-title">React-Redux-CSS-PostgresSQL-MercadoPago-Auth0 / Ecommerce</p>
+                        <p className="sub-title">React Redux TailwindCSS / PostgresSQL MercadoPago Auth0 Cloudinary Railway / Ecommerce</p>
                     </div>
 
                     <div className="flex items-center justify-center">
