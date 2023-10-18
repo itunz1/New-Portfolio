@@ -33,6 +33,14 @@ code {
     monospace;
 }
 
+.heroImg {
+  background-image: linear-gradient(
+    rgba(34, 34, 34, 06),
+    rgba(34, 34, 34, 06)
+  ),
+}
+
+
 @layer components {
   
   * {

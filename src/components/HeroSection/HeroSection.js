@@ -1,21 +1,58 @@
-import React from 'react';
-import jose from '../../images/jose.png';
 import { BiDownload } from 'react-icons/bi';
 import { CiFacebook } from 'react-icons/ci';
-import { FiGithub } from 'react-icons/fi';
-import { BsLinkedin } from 'react-icons/bs';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import resumen from '../../images/CVResumeEn.pdf'
+import Typewriter from 'typewriter-effect';
 
 
-export default function HeroSection() {
+
+export function HeroSection() {
+
+
+
+    function openGithub() {
+        window.open('https://github.com/itunz1')
+    };
+
+    function openLinkedin() {
+        window.open('https://www.linkedin.com/in/jose-lezama/')
+    };
 
     const resume = () => {
         window.open(resumen)
     }
 
+
     return (
-        <div className='bg-[#252734]'>
-            <div className='text-white absolute ml-5 top-[28rem] sm:top-[38rem] md:top-auto md:bottom-[-900px] md:ml-32 lg:ml-24 lg:bottom-auto lg:w-[400px] lg:relative xl:w-full xl:ml-32 w-fit xl:mt-16 2xl:ml-14 2xl:mt-32 '>
+        <div className='flex justify-center'>
+            <div className='z-3 max-w-[1200px] flex flex-col justify-center items-center px-[8px] py-[24px] mt-[230px]'>
+                <Typewriter
+                    options={{
+                        wrapperClassName:"text-[#fff59d] text-[88px] Typewriter__wrapper drop-shadow-[0_0_5px] font-cormorant font-bold",
+                        cursorClassName:"text-white Typewriter__cursor text-[78px]",
+                    }}
+                    onInit={(typewriter) => {
+                        typewriter.typeString('Jose Lezama')
+                            .start();
+                    }}
+                />
+                <div className='flex flex-row justify-center items-center p-[30px]'>
+                    <p className='mt-[10px] text-white text-[100px] text-center max-w-[600px] p-[70px] cursor-pointer hover:text-[#fff59d] hover:scale-125 hover:transition ease-in-out delay-2000'>
+                        <FaGithub onClick={openGithub} />
+                    </p>
+                    <p className='mt-[10px] text-white text-[100px] text-center max-w-[600px] p-[70px] cursor-pointer hover:text-[#fff59d] hover:scale-125 hover:transition ease-in-out delay-2000'>
+                        <FaLinkedin onClick={openLinkedin} />
+                    </p>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+
+export default HeroSection
+
+{/* <div className='text-white absolute ml-5 top-[28rem] sm:top-[38rem] md:top-auto md:bottom-[-900px] md:ml-32 lg:ml-24 lg:bottom-auto lg:w-[400px] lg:relative xl:w-full xl:ml-32 w-fit xl:mt-16 2xl:ml-14 2xl:mt-32 '>
                 <h3 className='mb-1 text-4xl font-bold tracking-tight sm:text-4xl lg:mt-28 lg:text-5xl xl:text-7xl xl:mt-0 2xl:mt-16 2xl:text-8xl'>Hello! I’m</h3>
                 <h2 className='font-bold tracking-normal text-6xl lg:text-[80px] xl:tracking-tight xl:text-[7.5rem] 2xl:text-[9rem] 2xl:mt-[-20px] '>Jose Lezama</h2>
                 <p className='mt-8 mb-8 md:mb-8 lg:mb-12 text-base text-[#858792] lg:text-lg xl:text-xl 2xl:text-2xl'>Full Stack Web Developer</p>
@@ -46,7 +83,4 @@ export default function HeroSection() {
                         <a className='text-white text-[23px] bg-[#262626] absolute top-[50%] left-[115%] p-2 sm:top-[42%] sm:left-[119%] md:top-[48%] md:left-[114%] lg:top-[60%] lg:text-2xl lg:left-[121%] xl:left-[510px] xl:top-[570px]  2xl:left-[510px] 2xl:top-[575px] sm:w-12 sm:h-12 lg:w-14 lg:h-14 xl:w-16 xl:h-16 border-2 border-[rgba(255,255,255,.5)] rounded-full sm:p-[10px] lg:p-[11px] xl:p-[18px] hover:bg-white hover:text-black' href='https://www.facebook.com/jose.lezama.562/' target='_blank' rel="noreferrer"><CiFacebook className='sm:text-2xl lg:text-3xl xl:top-[25%] xl:left-[25%] xl:absolute' /></a>
                     </div>
                 </div>
-            </div>
-        </div>
-    )
-}
+            </div> */}

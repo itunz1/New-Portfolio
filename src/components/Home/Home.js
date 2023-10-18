@@ -10,8 +10,8 @@ function Home() {
   return (
     <div className='container max-w-full mx-auto' id='home'>
           <Nav/>
-      <div className='bg-[#252734] h-[800px] sm:h-[1000px] lg:h-[700px] xl:min-h-screen overflow-hidden'>
-        <header className='relative mx-auto xl:min-h-screen max-w-7xl'>
+      <div className='h-[800px] sm:h-[1000px] lg:h-[700px] xl:min-h-[840px] bg-opacity-25 bg-center bg-cover bg-[url("https://static.vecteezy.com/system/resources/previews/002/326/623/original/black-golden-royal-luxury-background-landing-page-free-vector.jpg")]'>
+        <header className='mx-auto xl:min-h-screen max-w-7xl'>
           <HeroSection />
         </header>
       </div>

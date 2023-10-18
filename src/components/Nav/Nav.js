@@ -4,7 +4,7 @@ import { RxHamburgerMenu } from 'react-icons/rx'
 import { AiOutlineClose } from 'react-icons/ai'
 import { FaRegUser, FaChalkboard, FaAddressBook, FaCode } from 'react-icons/fa';
 import { useScrollPosition } from '../hooks/useScrollPosition';
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 
 

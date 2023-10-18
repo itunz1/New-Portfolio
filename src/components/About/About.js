@@ -3,7 +3,7 @@ import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer"
 
 export default function About() {
-    const text = `Hi, I'm Jose, a passionate frontend developer with over 1 years of experience in building web applications. 
+    const text = ` Hi, I'm Jose, a passionate frontend developer with over 1 years of experience in building web applications. 
     My focus is on creating user-friendly and visually stunning websites that provide an exceptional user experience. 
     One of my key strengths is my ability to collaborate with designers, backend developers, and project managers to bring
     projects to life. I understand the importance of communication and teamwork, and I'm always looking for ways to improve processes and streamline workflows.
@@ -44,7 +44,7 @@ export default function About() {
             opacity: 1,
             y: `0em`,
             transition: {
-                duration: 0.01,
+                duration: 0,
                 ease: [0.2, 0.65, 0.3, 0.9],
             },
         },
