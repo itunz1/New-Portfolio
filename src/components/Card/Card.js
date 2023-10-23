@@ -1,8 +1,9 @@
 import React from 'react'
 import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure } from "@nextui-org/react";
+import { FormattedMessage } from 'react-intl';
 
 
-function Card({ title, tech, img, content, code }) {
+function Card({ title, tech, img, content, contentEsp, code }) {
 
     const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
@@ -11,20 +12,22 @@ function Card({ title, tech, img, content, code }) {
     };
 
     return (
-        <div onClick={onOpen} className="w-[350px] overflow-hidden ease-in-out bg-white rounded shadow-lg hover:scale-[1.05] hover:transition delay-3000 cursor-pointer">
-            <img className="min-w-[350px] max-h-[215px] border-b-4 border-blue-500" src={img} alt="img not found" />
-            <div className="px-6 py-4">
-                <div className="mb-2 text-xl font-bold">{title}</div>
+        <div onClick={onOpen} className="w-full sm:w-[350px] overflow-hidden ease-in-out bg-white rounded shadow-lg hover:scale-[1.05] hover:transition delay-3000 cursor-pointer">
+            <img className="w-full h-[100px] sm:h-[250px] border-b-4 border-blue-500 " src={img} alt="img not found" />
+            <div className="sm:px-6 sm:py-4">
+                <div className="hidden mb-2 text-xl font-bold sm:inline">{title}</div>
             </div>
-            <div className="px-6 pt-4 pb-2">
-                <span className="inline-block px-3 py-1 mb-2 mr-2 text-sm font-semibold text-gray-700 bg-gray-200 rounded-full">{tech}</span>
+            <div className="px-2 pt-4 sm:px-6 sm:pb-2">
+                <span className="inline-block px-3 mb-2 mr-2 font-semibold text-[12px] text-gray-700 bg-gray-200 rounded-full sm:text-sm sm:py-1">{tech}</span>
             </div>
             <Modal
                 isOpen={isOpen}
                 onOpenChange={onOpenChange}
                 size="4xl"
+                placement='center'
+                scrollBehavior='inside'
                 classNames={{
-                    
+
                 }}
             >
                 <ModalContent>
@@ -34,15 +37,15 @@ function Card({ title, tech, img, content, code }) {
                             <img className='border-b-4 border-blue-500 max-h-[550px]' src={img} alt={title} />
                             <ModalBody>
                                 <p className='mt-[20px]'>
-                                    {content}
+                                    <FormattedMessage id="proyects.content" defaultMessage="n/a" values={{ content: content, contentEsp: contentEsp }} />
                                 </p>
                             </ModalBody>
                             <ModalFooter>
                                 <Button color="primary" onPress={openCode}>
-                                    Code
+                                    <FormattedMessage id="proyects.code" defaultMessage="Code" />
                                 </Button>
                                 <Button color="danger" variant="light" onPress={onClose}>
-                                    Close
+                                    <FormattedMessage id="proyects.close" defaultMessage="Close" />
                                 </Button>
                             </ModalFooter>
                         </>

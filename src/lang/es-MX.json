@@ -1,0 +1,34 @@
+{
+    "menu.about": "Sobre Me",
+    "menu.skills": "Habilidades",
+    "menu.proyects": "Proyectos",
+    "menu.contact": "Contacto",
+
+    "about.title": "Sobre Mi",
+    "about.content": "Hola soy José un apasionado desarrollador frontend con más de 2 años de experiencia construyendo aplicaciones web. Me enfoco en crear páginas web que sean amigables para el usuario y visualmente llamativas que provean una gran experiencia al usuario. Una de mis fortalezas es mi habilidad para colaborar en equipo con otros diseñadores para que los proyectos cobren vida. Entiendo la importancia de la comunicación y el trabajo en equipo y siempre estoy en busca de los medios que me ayuden a agilizar los flujos de trabajo. Mi estilo es muy versátil y adaptable a las necesidades del proyecto que este a la mano. Me acerco a cada asignación con creatividad y compromiso a la excelencia. Soy dedicado a estar al dia con las últimas tendencias  tecnológicas en la industria. Disfruto compartir mis conocimientos con otros, frecuentar reuniones y conferencias para mantenerme informado y conectado. Si estas interesado en trabajar conmigo o en saber mas sobre mi experiencia y habilidades, por favor no titubees en contactarme. Siempre estoy abierto a nuevas oportunidades.",
+
+    "skills.title": "Habilidades",
+    "skills.subtitle": "Habilidades Tecnicas",
+
+    "proyects.title": "Proyectos",
+    "proyects.content": "{contentEsp}",
+    "proyects.code": "Codigo",
+    "proyects.close": "Cerrar",
+
+    "contact.title": "Contactame",
+    "contact.phone": "Movil",
+    "contact.email": "Correo",
+    "contact.location": "Ubicacion",
+    "contact.address": "Direccion",
+
+    "contact.name": "Nombre",
+    "contact.email2": "Correo",
+    "contact.subject": "Asunto",
+    "contact.message": "Mensaje",
+    "contact.send": "Enviar",
+
+    "namePlaceholder": "Nombre",
+
+    "name.error": "{errores}",
+    "email.error": "{errores}"
+}

@@ -1,88 +1,40 @@
-import React, { useEffect } from 'react'
-import { useAnimation, motion } from "framer-motion";
-import { useInView } from "react-intersection-observer"
+import React from 'react'
+import { FormattedMessage } from 'react-intl';
+import { langContext } from '../../context/langContext';
+import { useContext } from 'react';
+import resumen from '../../images/CVResumeEn.pdf';
+import resumenEsp from '../../images/CVResumeEs.pdf';
 
 export default function About() {
-    const text = ` Hi, I'm Jose, a passionate frontend developer with over 1 years of experience in building web applications. 
-    My focus is on creating user-friendly and visually stunning websites that provide an exceptional user experience. 
-    One of my key strengths is my ability to collaborate with designers, backend developers, and project managers to bring
-    projects to life. I understand the importance of communication and teamwork, and I'm always looking for ways to improve processes and streamline workflows.
-    My writing style is versatile and adaptable to the needs of the project at hand. Whether it's creating engaging blog posts,
-    informative articles, or compelling product descriptions, I approach each assignment with creativity and a commitment to excellence. 
-    I'm dedicated to staying up to date with the latest trends and technologies in the industry, and I enjoy sharing my knowledge
-    with others and frequently attend meetups and conferences to stay informed and connected.
-    If you're interested in working with me or learning more about my experience and skills, please don't hesitate to get in touch.
-    I'm always open to new opportunities.` 
 
-    const ctrls = useAnimation();
+    const languaje = useContext(langContext)
+    
+    const resume = () => {
+        window.open(resumen)
+    }
 
-    const { ref, inView } = useInView({
-        threshold: 0.5,
-        triggerOnce: true,
-    });
-
-    useEffect(() => {
-        if (inView) {
-            ctrls.start("visible");
-        }
-        if (!inView) {
-            ctrls.start("hidden");
-        }
-    }, [ctrls, inView]);
-
-    const wordAnimation = {
-        hidden: {},
-        visible: {},
-    };
-
-    const characterAnimation = {
-        hidden: {
-            opacity: 0,
-            y: `0.25em`,
-        },
-        visible: {
-            opacity: 1,
-            y: `0em`,
-            transition: {
-                duration: 0,
-                ease: [0.2, 0.65, 0.3, 0.9],
-            },
-        },
-    };
+    const resumeEs = () => {
+        window.open(resumenEsp)
+    }
 
     return (
-        <div className='px-5 h-fit lg:px-20 sm:px-10'>
-            <h2 className='mb-10 text-4xl font-semibold text-center text-white sm:text-5xl lg:text-5xl xl:text-6xl'>About Me</h2>
-            {text.split(" ").map((word, index) => {
-                return (
-                    <motion.span
-                        className='mr-[0.5em] inline-block'
-                        ref={ref}
-                        aria-hidden="true"
-                        key={index}
-                        initial="hidden"
-                        animate={ctrls}
-                        variants={wordAnimation}
-                        transition={{
-                            delayChildren: index * 0.03,
-                            staggerChildren: 0.05,
-                        }}
-                    >
-                        {word.split("").map((character, index) => {
-                            return (
-                                <motion.span
-                                    aria-hidden="true"
-                                    key={index}
-                                    variants={characterAnimation}
-                                    className={`text-[#858792] text-sm sm:text-base xl:text-lg inline-block`}
-                                >
-                                    {character}
-                                </motion.span>
-                            );
-                        })}
-                    </motion.span>
-                );
-            })}
+        <div className='flex flex-col items-center px-5 h-fit lg:px-20 sm:px-10'>
+            <h2 className='mb-10 text-5xl font-semibold text-center text-white xl:text-6xl'>
+                <FormattedMessage id="about.title" defaultMessage="About" />
+            </h2>
+            <p className="text-[#858792] sm:text-base xl:text-lg inline-block">
+                <FormattedMessage id="about.content" defaultMessage="N/A" />
+            </p>
+
+            {languaje.state === 'en-US' ? <button onClick={resume} className="mt-[50px] inline-flex items-center justify-center w-60  py-2 text-gray-800 bg-gray-300 rounded hover:bg-gray-400">
+                <svg className="w-4 h-4 mr-2 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" /></svg>
+                <span className='tracking-normal'>Download Resume</span>
+            </button> : <button onClick={resumeEs} className="mt-[50px] inline-flex items-center justify-center w-60 px-4 py-2 text-gray-800 bg-gray-300 rounded hover:bg-gray-400">
+                <svg className="w-4 h-4 mr-2 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" /></svg>
+                <span>Descarga Resumen</span>
+            </button>  }
+
+            
         </div>
     )
 }

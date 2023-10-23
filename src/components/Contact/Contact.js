@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'
+import { FormattedMessage } from 'react-intl';
 
 
 
@@ -17,19 +18,21 @@ export default function Contact() {
   });
 
   const [errors, setErrors] = useState({});
+  const [errores, setErrores] = useState({});
 
 
   const handleChange = (e) => {
     setState({ ...state, [e.target.name]: e.target.value, });
     setErrors(validate({ ...state, [e.target.name]: e.target.value },));
+    setErrores(validar({ ...state, [e.target.name]: e.target.value },));
   }
 
   function validate(state) {
     let errors = {};
     if (!state.name) {
-      errors.name = "Name is required"
+      errors.name = "Name is required";
     } else if (!/^[_A-z0-9]*((-|\s)*[_A-z0-9])*$/g.test(state.name)) {
-      errors.name = "Name cannot contain special characters"
+      errors.name = "Name cannot contain special characters";
     }
     if (!state.email) {
       errors.email = "Email is required"
@@ -37,6 +40,21 @@ export default function Contact() {
       errors.email = "Invalid Email"
     }
     return errors;
+  };
+
+  function validar(state) {
+    let errores = {};
+    if (!state.name) {
+      errores.name = "Se requiere nombre";
+    } else if (!/^[_A-z0-9]*((-|\s)*[_A-z0-9])*$/g.test(state.name)) {
+      errores.name = "Nombre no puede contener caracteres especiales";
+    }
+    if (!state.email) {
+      errores.email = "Se requiere un correo"
+    } else if (!/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(state.email)) {
+      errores.email = "Correo invalido"
+    }
+    return errores;
   };
 
   const handleSubmit = async (e) => {
@@ -115,24 +133,34 @@ export default function Contact() {
   return (
     <div className=''>
       <ToastContainer limit={1} />
-      <h3 className='mb-5 text-3xl font-bold text-center text-white md:text-4xl lg:text-5xl'>Contact Me</h3>
+      <h3 className='mb-5 text-3xl font-bold text-center text-white md:text-4xl lg:text-5xl'>
+        <FormattedMessage id="contact.title" defaultMessage="Contact Me" />
+      </h3>
       <div className='flex flex-col-reverse md:flex-row md:max-h-[700px] justify-center'>
         <div className='md:w-[27%] mx-auto px-3 mt-5 w-[95%] md:px-0 md:ml-4 md:mt-[4.5rem] lg:mt-auto md:h-fit lg:h-fit lg:ml-auto lg:py-8 lg:px-12 lg:w-[35%] bg-[#2a2c39] justify-center flex'>
           <ul className='grid justify-around w-full grid-cols-2 gap-x-5 md:gap-0 md:w-11/12 lg:w-auto lg:px-auto lg:ml-0 md:flex md:flex-col'>
             <li className='contact-info'>
-              <h6 className='text-sm text-white sm:mb-2 lg:mb-5 lg:text-base'>Phone</h6>
+              <h6 className='text-sm text-white sm:mb-2 lg:mb-5 lg:text-base'>
+                <FormattedMessage id="contact.phone" defaultMessage="Phone" />
+              </h6>
               <p className='text-[#858792] text-xs sm:text-sm lg:text-base'>(+58) 414 8524974</p>
             </li>
             <li className='contact-info'>
-              <h6 className='text-sm text-white sm:mb-2 lg:mb-5 lg:text-base'>Email</h6>
+              <h6 className='text-sm text-white sm:mb-2 lg:mb-5 lg:text-base'>
+                <FormattedMessage id="contact.email" defaultMessage="Email" />
+              </h6>
               <p className='text-[#858792] text-xs sm:text-sm lg:text-base'>stx_jose@hotmail.com</p>
             </li>
             <li className='contact-info'>
-              <h6 className='text-sm text-white sm:mb-2 lg:mb-5 lg:text-base'>Location</h6>
+              <h6 className='text-sm text-white sm:mb-2 lg:mb-5 lg:text-base'>
+                <FormattedMessage id="contact.location" defaultMessage="Location" />
+              </h6>
               <p className='text-[#858792] text-xs sm:text-sm lg:text-base'>Venezuela</p>
             </li>
             <li className='contact-info'>
-              <h6 className='text-sm text-white sm:mb-2 lg:mb-5 lg:text-base'>Address</h6>
+              <h6 className='text-sm text-white sm:mb-2 lg:mb-5 lg:text-base'>
+                <FormattedMessage id="contact.address" defaultMessage="Address" />
+              </h6>
               <p className='text-[#858792] text-xs sm:text-sm lg:text-base'>Puerto Ordaz - Altavista</p>
             </li>
           </ul>
@@ -142,30 +170,40 @@ export default function Contact() {
           <form className='flex flex-col justify-between w-full mt-0 text-white md:p-12 lg:p-20' onSubmit={handleSubmit}>
             <div className='flex flex-col gap-5 mb-5 md:mb-10 md:gap-10 md:flex-row'>
               <div className='md:w-6/12'>
-                <label className='block mb-1 md:mb-2'>Name</label>
+                <label className='block mb-1 md:mb-2'>
+                  <FormattedMessage id="contact.name" defaultMessage="Name" />
+                </label>
                 <input className='text-sm lg:text-base w-full h-2 md:w-full md:h-10 bg-transparent border-[1px] border-[rgba(255,255,255,.1)] p-7'
                   type='text'
                   name='name'
                   value={state.name}
                   onChange={handleChange}
                   placeholder='Name' />
-                {errors.name && (<p className='text-xs text-[#fff59d] md:text-sm'>{errors.name}</p>)}
+                {errors.name && (<p className='text-xs text-[#fff59d] md:text-sm'>
+                  <FormattedMessage id="name.error" defaultMessage="wrong info" values={{ error: errors.name, errores: errores.name }} />
+                </p>)}
               </div>
 
               <div className='md:w-6/12'>
-                <label className='block mb-1 md:mb-2'>Email</label>
+                <label className='block mb-1 md:mb-2'>
+                  <FormattedMessage id="contact.email2" defaultMessage="Email" />
+                </label>
                 <input className='text-sm lg:text-base w-full h-2 md:w-full md:h-10 bg-transparent border-[1px] border-[rgba(255,255,255,.1)] p-7'
                   type='email'
                   name='email'
                   value={state.email}
                   onChange={handleChange}
-                  placeholder='Email' />
-                {errors.email && (<p className='text-xs text-[#fff59d] md:text-sm'>{errors.email}</p>)}
+                  placeholder='example@any.com' />
+                {errors.email && (<p className='text-xs text-[#fff59d] md:text-sm'>
+                  <FormattedMessage id="email.error" defaultMessage="wrong info" values={{ error: errors.email, errores: errores.email }} />
+                </p>)}
               </div>
             </div>
 
             <div className='flex flex-col'>
-              <label className='mb-1 md:mb-2'>Subject</label>
+              <label className='mb-1 md:mb-2'>
+                <FormattedMessage id="contact.subject" defaultMessage="Subject" />
+              </label>
               <input className='text-sm lg:text-base h-[4rem] md:h-10 mb-5 md:mb-10 bg-transparent border-[1px] border-[rgba(255,255,255,.1)] p-7'
                 type='subject'
                 name='subject'
@@ -173,13 +211,17 @@ export default function Contact() {
                 onChange={handleChange}
                 placeholder='Subject' />
 
-              <label className='mb-1 md:mb-2'>Message</label>
+              <label className='mb-1 md:mb-2'>
+                <FormattedMessage id="contact.message" defaultMessage="Message" />
+              </label>
               <textarea className='text-sm max-h-96 lg:text-base h-[230px] md:max-h-[300px] md:h-[240px] bg-transparent border-[1px] border-[rgba(255,255,255,.1)] p-5'
                 name='message'
                 onChange={handleChange}
                 placeholder='Message' />
               <p className={`text-white text-end ${state.message.length > 300 ? 'text-red-500' : ""}`}>{state.message.length}/300</p>
-              <button className='border-[1px] border-[rgba(255,255,255,.1)] w-3/12 mx-auto p-3 rounded-full hover:bg-[#858792] hover:bg-[#85879215] inline-block transition duration-500 ease-in-out hover:-translate-y-1' type='submit'>Send</button>
+              <button className='border-[1px] border-[rgba(255,255,255,.1)] w-3/12 mx-auto p-3 rounded-full hover:bg-[#858792] hover:bg-[#85879215] inline-block transition duration-500 ease-in-out hover:-translate-y-1' type='submit'>
+                <FormattedMessage id="contact.send" defaultMessage="Send" />
+              </button>
             </div>
           </form>
         </div>

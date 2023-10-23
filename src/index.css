@@ -32,12 +32,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-.heroImg {
-  background-image: linear-gradient(
-    rgba(34, 34, 34, 06),
-    rgba(34, 34, 34, 06)
-  ),
+  
+.active {
+    border-bottom: 3px solid #fff59d;
 }
 
 

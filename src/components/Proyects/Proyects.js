@@ -6,6 +6,7 @@ import project6 from '../../images/postit.png';
 import project9 from '../../images/memoryGame.png';
 import  cardData  from "../../data/data";
 import Card from "../Card/Card";
+import { FormattedMessage } from "react-intl";
 
 
 
@@ -54,16 +55,18 @@ function Proyects() {
 
     return (
         <div className="">
-            <div className="relative">
-                <h2 className='mb-10 lg:mb-20 relative z-10 bg-[#252734] w-min py-2 px-5  ml-2 md:ml-5 lg:ml-7 text-[40px] lg:text-5xl xl:text-6xl xl:ml-0 text-white border-[1px] border-[rgba(255,255,255,.5)] shadow-custom font-medium rounded-xl'>Proyects</h2>
-                <div className="w-full absolute h-[1px] top-[50%] bg-[rgba(255,255,255,.5)] ml-10"></div>
+            <div className="relative flex justify-center sm:flex sm:justify-start">
+                <h2 className='mb-10 lg:mb-20 relative z-10 bg-[#252734] w-min py-2 px-5  ml-2 md:ml-5 lg:ml-7 text-[40px] lg:text-5xl xl:text-6xl xl:ml-0 text-white border-[1px] border-[rgba(255,255,255,.5)] shadow-custom font-medium rounded-xl'>
+                    <FormattedMessage id="proyects.title" defaultMessage="Proyects"/>
+                </h2>
+                <div className="w-full absolute h-[1px] top-[30%] bg-[rgba(255,255,255,.5)] ml-10"></div>
             </div>
 
             <div className="flex justify-center">
-            <div className="flex flex-wrap gap-[50px] xl:w-[1300px] justify-center md:w-[800px] ">
+            <div className="grid grid-cols-2 md:flex md:flex-wrap gap-[10px] md:gap-[50px] xl:w-[1300px] justify-center">
                 {cardData.map((el, index) => {
                     return (
-                        <Card index={index} key={el.id} title={el.title} tech={el.tech} img={el.img} content={el.content} code={el.code}/>
+                        <Card key={el.id} title={el.title} tech={el.tech} img={el.img} content={el.content} code={el.code} contentEsp={el.contentEsp}/>
                     )
                 })}
             </div>
@@ -96,10 +99,10 @@ function Proyects() {
                         <h3 className="proyect-title">Memory Card Game</h3>
                         <img className="proyect-img" src={project9} alt='img' />
                         <div className="btn-container">
-                            <a className="btn" target='_blank' rel="noreferrer" href="https://utility-components.netlify.app/">Site</a>
+                            <a className="btn" target='_blank' rel="noreferrer" href="https://memory-gamess.netlify.app/">Site</a>
                             <a className="btn" target='_blank' rel="noreferrer" href="https://github.com/itunz1/Memory-card-game">Code</a>
                         </div>
-                        <p className="sub-title">React / Reusable Components</p>
+                        <p className="sub-title">Javascript / Game</p>
                     </div>
                 </Slider>
             </div>
