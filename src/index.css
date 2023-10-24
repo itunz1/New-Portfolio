@@ -37,6 +37,10 @@ code {
     border-bottom: 3px solid #fff59d;
 }
 
+.landing {
+  background-image: url('./images/landingPhone.jpg');
+}
+
 
 @layer components {
   

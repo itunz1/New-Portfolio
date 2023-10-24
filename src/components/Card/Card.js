@@ -23,8 +23,7 @@ function Card({ title, tech, img, content, contentEsp, code }) {
             <Modal
                 isOpen={isOpen}
                 onOpenChange={onOpenChange}
-                size="4xl"
-                placement='center'
+                size="xl"
                 scrollBehavior='inside'
                 classNames={{
 
@@ -34,7 +33,7 @@ function Card({ title, tech, img, content, contentEsp, code }) {
                     {(onClose) => (
                         <>
                             <ModalHeader className="flex flex-col gap-1">{title}</ModalHeader>
-                            <img className='border-b-4 border-blue-500 max-h-[550px]' src={img} alt={title} />
+                            <img className='w-full border-b-4 border-blue-500' src={img} alt={title} />
                             <ModalBody>
                                 <p className='mt-[20px]'>
                                     <FormattedMessage id="proyects.content" defaultMessage="n/a" values={{ content: content, contentEsp: contentEsp }} />

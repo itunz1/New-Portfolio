@@ -59,10 +59,10 @@ function Proyects() {
                 <h2 className='mb-10 lg:mb-20 relative z-10 bg-[#252734] w-min py-2 px-5  ml-2 md:ml-5 lg:ml-7 text-[40px] lg:text-5xl xl:text-6xl xl:ml-0 text-white border-[1px] border-[rgba(255,255,255,.5)] shadow-custom font-medium rounded-xl'>
                     <FormattedMessage id="proyects.title" defaultMessage="Proyects"/>
                 </h2>
-                <div className="w-full absolute h-[1px] top-[30%] bg-[rgba(255,255,255,.5)] ml-10"></div>
+                <div className="w-full absolute h-[1px] top-[30%] bg-[rgba(255,255,255,.5)] ml-5"></div>
             </div>
 
-            <div className="flex justify-center">
+            <div className="flex justify-center mt-20">
             <div className="grid grid-cols-2 md:flex md:flex-wrap gap-[10px] md:gap-[50px] xl:w-[1300px] justify-center">
                 {cardData.map((el, index) => {
                     return (

@@ -43,7 +43,7 @@ export function HeroSection() {
                         } />
                 </Tabs>
             </div>
-            <div className='z-3 max-w-[1200px] flex flex-col justify-center items-center px-[8px] py-[24px] mt-[120px] sm:mt-[200px]'>
+            <div className='z-3 max-w-[1200px] flex flex-col justify-center items-center px-[8px] py-[24px] mt-[165px] sm:mt-[200px] lg:mt-[135px] xl:mt-[170px]'>
                 <Typewriter
                     options={{
                         wrapperClassName: "text-[#fff59d] text-[54px] sm:text-[88px] Typewriter__wrapper drop-shadow-[0_0_5px] font-cormorant font-bold",

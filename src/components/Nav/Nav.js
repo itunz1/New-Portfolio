@@ -24,7 +24,7 @@ export default function Nav() {
             )}
         >
             <div className='px-4 mx-auto max-w-7xl sm:px-6'>
-                <div className='flex items-center justify-between px-10 py-6 md:space-x-10'>
+                <div className='flex items-center justify-between py-6 sm:px-10 md:space-x-10'>
                     <div className='flex justify-start lg:w-0 lg:flex-1'>
                         <Link to="home"
                             className='border-white border-solid '
