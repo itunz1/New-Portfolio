@@ -53,6 +53,7 @@
   },
   "devDependencies": {
     "tailwindcss": "^3.2.7",
-    "tailwindcss-debug-screens": "^2.2.1"
+    "tailwindcss-debug-screens": "^2.2.1",
+    "typescript": "^5.2.2"
   }
 }
