@@ -113,16 +113,20 @@ export default function Nav() {
                             </div>
                         </div>
 
+
                         <div className='px-5 py-6 space-y-6'>
                             <div className='flex flex-col items-center justify-center gap-8'>
                                 <Link to="about"
                                     spy={true}
                                     smooth={true}
                                     offset={-70}
-                                    duration={800}>
-                                    <span className='inline-flex items-center gap-1 text-lg font-medium text-black cursor-pointer hover:text-blue-400'>< FaRegUser className='text-sm' />
-                                        <FormattedMessage id="menu.about" defaultMessage="About" />
-                                    </span>
+                                    duration={800}
+                                >
+                                    <Popover.Button>
+                                        <span className='inline-flex items-center gap-1 text-lg font-medium text-black cursor-pointer hover:text-blue-400'>< FaRegUser className='text-sm' />
+                                            <FormattedMessage id="menu.about" defaultMessage="About" />
+                                        </span>
+                                    </Popover.Button>
                                 </Link>
 
                                 <Link to="skills"
@@ -130,9 +134,11 @@ export default function Nav() {
                                     smooth={true}
                                     offset={-70}
                                     duration={800}>
-                                    <span className='inline-flex items-center gap-1 text-lg font-medium text-black cursor-pointer hover:text-blue-400'><FaCode className='text-base' />
-                                        <FormattedMessage id="menu.skills" defaultMessage="Skills" />
-                                    </span>
+                                    <Popover.Button>
+                                        <span className='inline-flex items-center gap-1 text-lg font-medium text-black cursor-pointer hover:text-blue-400'><FaCode className='text-base' />
+                                            <FormattedMessage id="menu.skills" defaultMessage="Skills" />
+                                        </span>
+                                    </Popover.Button>
                                 </Link>
 
                                 <Link to="proyects"
@@ -140,9 +146,11 @@ export default function Nav() {
                                     smooth={true}
                                     offset={-20}
                                     duration={800}>
-                                    <span className='inline-flex items-center gap-1 text-lg font-medium text-black cursor-pointer hover:text-blue-400'><FaChalkboard className='text-base' />
-                                        <FormattedMessage id="menu.proyects" defaultMessage="Proyects" />
-                                    </span>
+                                    <Popover.Button>
+                                        <span className='inline-flex items-center gap-1 text-lg font-medium text-black cursor-pointer hover:text-blue-400'><FaChalkboard className='text-base' />
+                                            <FormattedMessage id="menu.proyects" defaultMessage="Proyects" />
+                                        </span>
+                                    </Popover.Button>
                                 </Link>
 
                                 <Link to="contact"
@@ -150,9 +158,11 @@ export default function Nav() {
                                     smooth={true}
                                     offset={-20}
                                     duration={800}>
-                                    <span className='inline-flex items-center gap-1 text-lg font-medium text-black cursor-pointer hover:text-blue-400'> <FaAddressBook className='text-sm' />
-                                        <FormattedMessage id="menu.contact" defaultMessage="Contact" />
-                                    </span>
+                                    <Popover.Button>
+                                        <span className='inline-flex items-center gap-1 text-lg font-medium text-black cursor-pointer hover:text-blue-400'> <FaAddressBook className='text-sm' />
+                                            <FormattedMessage id="menu.contact" defaultMessage="Contact" />
+                                        </span>
+                                    </Popover.Button>
                                 </Link>
                             </div>
 

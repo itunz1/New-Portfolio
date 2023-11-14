@@ -25,9 +25,8 @@ function Card({ title, tech, img, content, contentEsp, code }) {
                 onOpenChange={onOpenChange}
                 size="xl"
                 scrollBehavior='inside'
-                classNames={{
-
-                }}
+                placement='center'
+                className="w-[85%] sm:w-full"
             >
                 <ModalContent>
                     {(onClose) => (
