@@ -66,7 +66,7 @@ function Proyects() {
             <div className="grid grid-cols-2 md:flex md:flex-wrap gap-[10px] md:gap-[50px] xl:w-[1300px] justify-center">
                 {cardData.map((el, index) => {
                     return (
-                        <Card key={el.id} title={el.title} tech={el.tech} img={el.img} content={el.content} code={el.code} contentEsp={el.contentEsp}/>
+                        <Card key={el.id} title={el.title} tech={el.tech} img={el.img} content={el.content} code={el.code} contentEsp={el.contentEsp} site={el.site}/>
                     )
                 })}
             </div>

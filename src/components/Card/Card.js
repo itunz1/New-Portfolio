@@ -3,12 +3,16 @@ import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDi
 import { FormattedMessage } from 'react-intl';
 
 
-function Card({ title, tech, img, content, contentEsp, code }) {
+function Card({ title, tech, img, content, contentEsp, code, site }) {
 
     const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
     function openCode() {
         window.open(code)
+    };
+
+    function openSite() {
+        window.open(site)
     };
 
     return (
@@ -39,6 +43,10 @@ function Card({ title, tech, img, content, contentEsp, code }) {
                                 </p>
                             </ModalBody>
                             <ModalFooter>
+                                {site? <Button color="primary" onPress={openSite}>
+                                    Website
+                                </Button> : "" }
+                                
                                 <Button color="primary" onPress={openCode}>
                                     <FormattedMessage id="proyects.code" defaultMessage="Code" />
                                 </Button>

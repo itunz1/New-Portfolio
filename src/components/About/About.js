@@ -2,19 +2,19 @@ import React from 'react'
 import { FormattedMessage } from 'react-intl';
 import { langContext } from '../../context/langContext';
 import { useContext } from 'react';
-import resumen from '../../images/CVResumeEn.pdf';
-import resumenEsp from '../../images/CVResumeEs.pdf';
+// import resumen from '../../images/CVResumeEn.pdf';
+// import resumenEsp from '../../images/CVResumeEs.pdf';
 
 export default function About() {
 
     const languaje = useContext(langContext)
     
     const resume = () => {
-        window.open(resumen)
+        window.open('/CVResumeEn.pdf')
     }
 
     const resumeEs = () => {
-        window.open(resumenEsp)
+        window.open('/CVResumeEs.pdf')
     }
 
     return (

@@ -3,7 +3,7 @@ import project2 from '../images/pokemon.gif';
 import project3 from "../images/omnifood.png";
 import project4 from '../images/bankWeb.png';
 import project5 from '../images/twitterClone.png';
-import project6 from '../images/findDrink.png';
+import project6 from '../images/campweb.png';
 
 
 const cardData = [
@@ -42,6 +42,7 @@ const cardData = [
         por nombre, tipo, ataque, también puedes crear tu propio pokemon para el backend
         utilice PostgresSQL y AWS para el deploy y para el front JS, React, Redux, CSS puro`,
         code: "https://github.com/itunz1/PokemonPI",
+        site: ""
     },
     {
         id: "proyect3",
@@ -61,8 +62,9 @@ const cardData = [
         tech: "#React",
         img: project4,
         content: `This is a full responsive website for client exhibition using UI/UX principies.`,
-        contentEsp: "Realice esta pagina web de exhibición sobre una compañía ficticia dedicada a la venta de comida saludable utilizando HTML y CSS puro.",
+        contentEsp: "Esta es una website responsiva para exhibicion usando los principios de UI/UX",
         code: "https://github.com/itunz1/Moderm-Website",
+        site: "https://6564e79bc0e55f13d713f94c--timely-pika-71bdbf.netlify.app/"
     },
     {
         id: "proyect5",
@@ -75,14 +77,13 @@ const cardData = [
     },
     {
         id: "proyect6",
-        title: "Find-Drink App",
-        tech: "#React",
+        title: "Camp website",
+        tech: "#NextJs",
         img: project6,
         content: `This is a full responsive website for client exhibition using UI/UX principies.`,
-        contentEsp: `App donde puedes buscar recetas para hacer bebidas a traves de una API, al hacer click sobre alguna
-        se te mostrara todos los ingredientes y como prepararlas,
-        utilice React, CSS puro.`,
-        code: "https://github.com/itunz1/FindDrinks",
+        contentEsp: "Esta es una website responsiva para exhibicion usando los principios de UI/UX",
+        code: "https://github.com/itunz1/Camp-website",
+        site: "https://6564e9a2ba01d117ce17b246--harmonious-hummingbird-9e75e2.netlify.app/"
     },
 ]
 
