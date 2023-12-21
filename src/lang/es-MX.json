@@ -15,6 +15,9 @@
     "proyects.code": "Codigo",
     "proyects.close": "Cerrar",
 
+    "extras.title": "Actividades Extras",
+    "extras.description": "{descriptionEsp}",
+
     "contact.title": "Contactame",
     "contact.phone": "Movil",
     "contact.email": "Correo",

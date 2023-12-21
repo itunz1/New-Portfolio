@@ -5,6 +5,9 @@ import About from '../About/About.js';
 import Skills from '../Skills/Skills';
 import Proyects from '../Proyects/Proyects';
 import Contact from '../Contact/Contact';
+import ExtraProjects from '../ExtraProjects/ExtraProjects.js';
+import { FormattedMessage } from 'react-intl';
+
 
 
 function Home() {
@@ -34,8 +37,17 @@ function Home() {
         </section>
       </div>
 
+      <div className='bg-[#2a2c39]'>
+        <section className='h-[800px] flex flex-col justify-center items-center max-w-6xl py-24 mx-auto'>
+          <h2 className='text-5xl font-bold text-white'>
+          <FormattedMessage id='extras.title' defaultMessage="Extra Activities"/>
+          </h2>
+          <ExtraProjects />
+        </section>
+      </div>
+
       <div className='bg-[#252734] h-fit' id='contact'>
-        <section className='max-w-6xl py-24 mx-auto'>
+        <section className='max-w-6xl py-24 mx-auto overflow-hidden'>
           <Contact />
         </section>
       </div>

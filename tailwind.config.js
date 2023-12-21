@@ -43,6 +43,11 @@ module.exports = {
   darkMode: "class",
   plugins: [
     nextui(),
-    require('tailwindcss-debug-screens')
+    require('tailwindcss-debug-screens'),
+    require("tailwindcss/nesting")
+    // require('postcss-import'),
+    // require('tailwindcss/nesting')(require('postcss-nesting')),
+    // require('autoprefixer'),
+    // require('tailwindcss'),
   ],
 }

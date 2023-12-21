@@ -4,13 +4,17 @@ import project3 from "../images/omnifood.png";
 import project4 from '../images/bankWeb.png';
 import project5 from '../images/twitterClone.png';
 import project6 from '../images/campweb.png';
+import project7 from '../images/videogames.png';
+import project8 from '../images/got.png';
+import project9 from '../images/memory1.png';
+import project10 from '../images/postit1.png'
 
 
-const cardData = [
+export const cardData = [
     {
         id: "project1",
         title: "CarsMarket",
-        tech: "#React #PostgreSQL",
+        tech: "#React-Redux #PostgreSQL",
         img: project1,
         content: `This is a well made Ecommerce with a team of 5 colleague where you can post, buy or sell
         any vehicle. I worked in the front doing the section where you can see all the details of any post made
@@ -33,7 +37,7 @@ const cardData = [
     {
         id: "proyect2",
         title: "Pokemon App",
-        tech: "#React #PostgreSQL",
+        tech: "#React-Redux #PostgreSQL",
         img: project2,
         content: `I made this proyect individually where you can find your favorite pokemon
         by fetching data from a public API storing the data into a database, added some features
@@ -87,4 +91,47 @@ const cardData = [
     },
 ]
 
-export default cardData
+
+export const extras = [
+    {
+        id: 'yellow',
+        title: 'Videogames App',
+        img: project7,
+        description: 'This application allows you to search information about video games availables in an public API',
+        descriptionEsp: 'Aplicacion donde puedes buscar informacion sobre video juegos disponibles en una API publica',
+        tech: '#React-Redux',
+        code: 'https://github.com/itunz1/VideoGames',
+        site: 'https://657f539fc7a0a529a2939f9f--dancing-florentine-f45c8b.netlify.app/',
+    },
+    {
+        id: 'green',
+        title: 'Memory Card Game',
+        img: project9,
+        description: 'Fun memory game made with pets images using JQuery and JavaScript',
+        descriptionEsp: 'Divertido juego de memoria con imagenes de animales realizado con JavaScript',
+        tech: '#JavaScript #HTML #CSS',
+        code: 'https://github.com/itunz1/Memory-card-game',
+        site: 'https://memory-gamess.netlify.app/',
+    },
+    {
+        id: 'blue',
+        title: 'Postit App',
+        img: project10,
+        description: 'This application allows you to post a comment or leave a comment into another users post',
+        descriptionEsp: 'Una aplicacion donde puedes postear comentarios o responder comentarios de otros usuarios',
+        tech: '#NextJs #Firebase',
+        code: 'https://github.com/itunz1/Post-Comment-proytect',
+        site: 'https://postsz-comments.netlify.app',
+    },
+    {
+        id: 'violet',
+        title: 'Game of Thrones App',
+        img: project8,
+        description: 'Application to learn about the characters of the famous series The Game of Thrones and their most shocking phrases in the series.',
+        descriptionEsp: 'Aplicacion para conocer a los personajes de la famosa serie de The Game of Thrones y sus frases mas celebres en la serie',
+        tech: '#React',
+        code: 'https://github.com/itunz1/Game-of-thrones-App',
+        site: 'https://gleaming-brigadeiros-e2d8e4.netlify.app/',
+    },
+]
+

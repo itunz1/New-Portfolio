@@ -15,6 +15,9 @@
     "proyects.code": "Code",
     "proyects.close": "Close",
 
+    "extras.title": "Extra Activities",
+    "extras.description": "{description}",
+
     "contact.title": "Contact Me",
     "contact.phone": "Phone",
     "contact.email": "Email",

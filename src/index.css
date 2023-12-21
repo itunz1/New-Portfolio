@@ -57,6 +57,7 @@ code {
   h3 {
     @apply font-cormorant;
   }
+  
 }
 
   div, span {
@@ -225,3 +226,5 @@ code {
     filter: blur(750px);
   }
   
+/* ------------------------- */
+

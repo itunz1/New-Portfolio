@@ -1,4 +1,4 @@
-import { BiDownload } from 'react-icons/bi';
+// import { BiDownload } from 'react-icons/bi';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import Typewriter from 'typewriter-effect';
 import { Tabs, Tab } from "@nextui-org/react";
@@ -6,6 +6,7 @@ import { langContext } from '../../context/langContext';
 import React, { useContext } from 'react';
 import US from "./../../images/us.png";
 import ES from "./../../images/es.png";
+import { Link } from 'react-router-dom';
 
 
 
@@ -30,20 +31,20 @@ export function HeroSection() {
                     <Tab key="ES"
                         title={
                             <div onClick={() => languaje.changeLang("en-US")} className="flex items-center w-[20px] md:w-[40px] space-x-2">
-                                <img className='w-[100%] md:w-[50%] text-center' src={US} alt='United State Flag'/>
+                                <img className='w-[100%] md:w-[50%] text-center' src={US} alt='United State Flag' />
                                 <span className='hidden md:inline'>EN</span>
                             </div>
                         } />
                     <Tab key="EN"
                         title={
                             <div onClick={() => languaje.changeLang("es-MX")} className="flex items-center space-x-2  w-[20px]  md:w-[40px]">
-                                <img className='w-[100%] md:w-[50%] text-center' src={ES} alt='Espain Flag'/>
+                                <img className='w-[100%] md:w-[50%] text-center' src={ES} alt='Espain Flag' />
                                 <span className='hidden md:inline'>ES</span>
                             </div>
                         } />
                 </Tabs>
             </div>
-            <div className='z-3 max-w-[1200px] flex flex-col justify-center items-center px-[8px] py-[24px] mt-[165px] sm:mt-[200px] lg:mt-[135px] xl:mt-[170px]'>
+            <div className='z-3 max-w-[1200px] flex flex-col justify-center items-center px-[8px] py-[24px] mt-[200px] lg:mt-[135px] xl:mt-[170px]'>
                 <Typewriter
                     options={{
                         wrapperClassName: "text-[#fff59d] text-[54px] sm:text-[88px] Typewriter__wrapper drop-shadow-[0_0_5px] font-cormorant font-bold",
@@ -54,13 +55,13 @@ export function HeroSection() {
                             .start();
                     }}
                 />
-                <div className='flex flex-row justify-center items-center p-[30px]'>
-                    <p className='mt-[10px] text-white text-[100px] text-center max-w-[600px] md:p-[70px] cursor-pointer hover:text-[#fff59d] hover:scale-125 hover:transition ease-in-out delay-2000 ml-[55px] md:ml-0'>
-                        <FaGithub onClick={openGithub} />
-                    </p>
-                    <p className='mt-[10px] text-white text-[100px] text-center max-w-[600px] p-[70px] cursor-pointer hover:text-[#fff59d] hover:scale-125 hover:transition ease-in-out delay-2000'>
-                        <FaLinkedin onClick={openLinkedin} />
-                    </p>
+                <div className='flex gap-10 mt-5 sm:gap-16'>
+                    <Link to='https://github.com/itunz1' target="_blank"> 
+                        <FaGithub className='text-white text-7xl sm:text-8xl'/>
+                    </Link>
+                    <Link to='https://www.linkedin.com/in/jose-lezama/' target="_blank">
+                        <FaLinkedin className='text-white text-7xl sm:text-8xl'/>
+                    </Link>
                 </div>
             </div>
         </div>

@@ -1,10 +1,7 @@
-import Slider from "react-slick";
+// import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import project3 from '../../images/project3.gif';
-import project6 from '../../images/postit.png';
-import project9 from '../../images/memoryGame.png';
-import  cardData  from "../../data/data";
+import { cardData } from "../../data/data";
 import Card from "../Card/Card";
 import { FormattedMessage } from "react-intl";
 
@@ -14,43 +11,43 @@ import { FormattedMessage } from "react-intl";
 function Proyects() {
 
 
-    const settings = {
-        className: "p-5 md:p-8 lg:p-5 xl:p-0",
-        dots: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        pauseOnHover: true,
-        responsive: [
-            {
-                breakpoint: 1280,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: false
-                }
-            },
-            {
-                breakpoint: 1025,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    initialSlide: 2
-                }
-            },
-            {
-                breakpoint: 640,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                }
-            }
-        ]
-    };
+    // const settings = {
+    //     className: "p-5 md:p-8 lg:p-5 xl:p-0",
+    //     dots: false,
+    //     infinite: true,
+    //     speed: 500,
+    //     slidesToShow: 2,
+    //     slidesToScroll: 1,
+    //     autoplay: true,
+    //     autoplaySpeed: 2000,
+    //     pauseOnHover: true,
+    //     responsive: [
+    //         {
+    //             breakpoint: 1280,
+    //             settings: {
+    //                 slidesToShow: 2,
+    //                 slidesToScroll: 1,
+    //                 infinite: true,
+    //                 dots: false
+    //             }
+    //         },
+    //         {
+    //             breakpoint: 1025,
+    //             settings: {
+    //                 slidesToShow: 1,
+    //                 slidesToScroll: 1,
+    //                 initialSlide: 2
+    //             }
+    //         },
+    //         {
+    //             breakpoint: 640,
+    //             settings: {
+    //                 slidesToShow: 1,
+    //                 slidesToScroll: 1,
+    //             }
+    //         }
+    //     ]
+    // };
 
 
     return (
@@ -72,7 +69,7 @@ function Proyects() {
             </div>
             </div>
 
-            <div className="mt-28">
+            {/* <div className="mt-28">
                 <h2 className="mb-10 text-5xl font-bold text-white">Articles</h2>
                 <Slider {...settings}>
                     <div className="flex items-center justify-center">
@@ -105,7 +102,7 @@ function Proyects() {
                         <p className="sub-title">Javascript / Game</p>
                     </div>
                 </Slider>
-            </div>
+            </div> */}
         </div>
     )
 }
