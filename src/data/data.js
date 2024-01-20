@@ -7,7 +7,9 @@ import project6 from '../images/campweb.png';
 import project7 from '../images/videogames.png';
 import project8 from '../images/got.png';
 import project9 from '../images/memory1.png';
-import project10 from '../images/postit1.png'
+import project10 from '../images/postit1.png';
+import project11 from '../images/rest.png';
+import project12 from '../images/radiotaxi.png';
 
 
 export const cardData = [
@@ -35,7 +37,7 @@ export const cardData = [
         site: "https://carsmarket.vercel.app/",
     },
     {
-        id: "proyect2",
+        id: "project2",
         title: "Pokemon App",
         tech: "#React-Redux #PostgreSQL",
         img: project2,
@@ -49,9 +51,9 @@ export const cardData = [
         site: ""
     },
     {
-        id: "proyect3",
+        id: "project3",
         title: "Omnifood",
-        tech: "#HTML #CSS",
+        tech: "#HTML #CSS #Javascript",
         img: project3,
         content: `This is a full responsive website for client exhibition using UI/UX principies, aplaying pure
         HTML/CSS and querys.`,
@@ -61,7 +63,7 @@ export const cardData = [
         site: "https://omnii-foood.netlify.app/",
     },
     {
-        id: "proyect4",
+        id: "project4",
         title: "Moderm Website",
         tech: "#React",
         img: project4,
@@ -71,7 +73,7 @@ export const cardData = [
         site: "https://6564e79bc0e55f13d713f94c--timely-pika-71bdbf.netlify.app/"
     },
     {
-        id: "proyect5",
+        id: "project5",
         title: "Twitter Clone",
         tech: "#NextJs #Firebase",
         img: project5,
@@ -80,7 +82,7 @@ export const cardData = [
         code: "https://github.com/itunz1/Twitter-Clone",
     },
     {
-        id: "proyect6",
+        id: "project6",
         title: "Camp website",
         tech: "#NextJs",
         img: project6,
@@ -88,6 +90,26 @@ export const cardData = [
         contentEsp: "Esta es una website responsiva para exhibicion usando los principios de UI/UX",
         code: "https://github.com/itunz1/Camp-website",
         site: "https://6564e9a2ba01d117ce17b246--harmonious-hummingbird-9e75e2.netlify.app/"
+    },
+    {
+        id: "project7",
+        title: "Restaurant website",
+        tech: "#HTML, #CSS, #Javascript",
+        img: project11,
+        content: `This is a full responsive website for client exhibition using UI/UX principies.`,
+        contentEsp: "Esta es una website responsiva para exhibicion usando los principios de UI/UX",
+        code: "https://github.com/itunz1/Camp-website",
+        site: "https://flourishing-pithivier-7c07da.netlify.app/"
+    },
+    {
+        id: "project8",
+        title: "Restaurant website",
+        tech: "#HTML, #CSS, #Javascript",
+        img: project12,
+        content: `This is a full responsive website designed for a client that offers taxi services in Chile, applied SEO resulting in more clients acquisition.`,
+        contentEsp: "Esta es una website responsiva diseñada para un cliente que ofrece servicos de taxi en chile, aplique SEO resultando en mas clientes adquiridos",
+        code: "",
+        site: "https://antofagastataxivip.com/"
     },
 ]
 

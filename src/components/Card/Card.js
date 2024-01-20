@@ -39,7 +39,7 @@ function Card({ title, tech, img, content, contentEsp, code, site }) {
                             <img className='w-full border-b-4 border-blue-500' src={img} alt={title} />
                             <ModalBody>
                                 <p className='mt-[20px]'>
-                                    <FormattedMessage id="proyects.content" defaultMessage="n/a" values={{ content: content, contentEsp: contentEsp }} />
+                                    <FormattedMessage id="projects.content" defaultMessage="n/a" values={{ content: content, contentEsp: contentEsp }} />
                                 </p>
                             </ModalBody>
                             <ModalFooter>
@@ -48,10 +48,10 @@ function Card({ title, tech, img, content, contentEsp, code, site }) {
                                 </Button> : "" }
                                 
                                 <Button color="primary" onPress={openCode}>
-                                    <FormattedMessage id="proyects.code" defaultMessage="Code" />
+                                    <FormattedMessage id="projects.code" defaultMessage="Code" />
                                 </Button>
                                 <Button color="danger" variant="light" onPress={onClose}>
-                                    <FormattedMessage id="proyects.close" defaultMessage="Close" />
+                                    <FormattedMessage id="projects.close" defaultMessage="Close" />
                                 </Button>
                             </ModalFooter>
                         </>

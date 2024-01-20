@@ -1,7 +1,7 @@
 {
     "menu.about": "About",
     "menu.skills": "Skills",
-    "menu.proyects": "Proyects",
+    "menu.projects": "Projects",
     "menu.contact": "Contact",
 
     "about.title": "About",
@@ -10,10 +10,10 @@
     "skills.title": "Skills",
     "skills.subtitle": "Tech Skills",
 
-    "proyects.title": "Proyects",
-    "proyects.content": "{content}",
-    "proyects.code": "Code",
-    "proyects.close": "Close",
+    "projects.title": "Projects",
+    "projects.content": "{content}",
+    "projects.code": "Code",
+    "projects.close": "Close",
 
     "extras.title": "Extra Activities",
     "extras.description": "{description}",

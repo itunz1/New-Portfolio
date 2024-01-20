@@ -1,6 +1,6 @@
 // import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
 import { cardData } from "../../data/data";
 import Card from "../Card/Card";
 import { FormattedMessage } from "react-intl";
@@ -8,7 +8,7 @@ import { FormattedMessage } from "react-intl";
 
 
 
-function Proyects() {
+function Projects() {
 
 
     // const settings = {
@@ -54,7 +54,7 @@ function Proyects() {
         <div className="">
             <div className="relative flex justify-center sm:flex sm:justify-start">
                 <h2 className='mb-10 lg:mb-20 relative z-10 bg-[#252734] w-min py-2 px-5  ml-2 md:ml-5 lg:ml-7 text-[40px] lg:text-5xl xl:text-6xl xl:ml-0 text-white border-[1px] border-[rgba(255,255,255,.5)] shadow-custom font-medium rounded-xl'>
-                    <FormattedMessage id="proyects.title" defaultMessage="Proyects"/>
+                    <FormattedMessage id="projects.title" defaultMessage="Projects"/>
                 </h2>
                 <div className="w-full absolute h-[1px] top-[30%] bg-[rgba(255,255,255,.5)] ml-5"></div>
             </div>
@@ -109,6 +109,6 @@ function Proyects() {
 
 
 
-export default Proyects
+export default Projects
 
 

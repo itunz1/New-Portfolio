@@ -1,7 +1,7 @@
 {
-    "menu.about": "Sobre Me",
+    "menu.about": "Sobre Mi",
     "menu.skills": "Habilidades",
-    "menu.proyects": "Proyectos",
+    "menu.projects": "Proyectos",
     "menu.contact": "Contacto",
 
     "about.title": "Sobre Mi",
@@ -10,10 +10,10 @@
     "skills.title": "Habilidades",
     "skills.subtitle": "Habilidades Tecnicas",
 
-    "proyects.title": "Proyectos",
-    "proyects.content": "{contentEsp}",
-    "proyects.code": "Codigo",
-    "proyects.close": "Cerrar",
+    "projects.title": "Proyectos",
+    "projects.content": "{contentEsp}",
+    "projects.code": "Codigo",
+    "projects.close": "Cerrar",
 
     "extras.title": "Actividades Extras",
     "extras.description": "{descriptionEsp}",

@@ -64,13 +64,13 @@ export default function Nav() {
                             </span>
                         </Link>
 
-                        <Link to="proyects"
+                        <Link to="projects"
                             spy={true}
                             smooth={true}
                             offset={-20}
                             duration={800}>
                             <span className='inline-flex items-center gap-1 text-lg font-medium text-white cursor-pointer hover:text-[#fff59d]'><FaChalkboard className='text-base' />
-                                <FormattedMessage id="menu.proyects" defaultMessage="Proyects" />
+                                <FormattedMessage id="menu.projects" defaultMessage="Proyects" />
                             </span>
                         </Link>
 
@@ -141,7 +141,7 @@ export default function Nav() {
                                     </Popover.Button>
                                 </Link>
 
-                                <Link to="proyects"
+                                <Link to="projects"
                                     spy={true}
                                     smooth={true}
                                     offset={-20}

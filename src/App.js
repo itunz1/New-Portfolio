@@ -1,3 +1,4 @@
+"use client"
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 import { NextUIProvider } from "@nextui-org/react";
 import Home from "./components/Home/Home.js";

@@ -3,7 +3,7 @@ import Nav from '../Nav/Nav';
 import HeroSection from '../HeroSection/HeroSection';
 import About from '../About/About.js';
 import Skills from '../Skills/Skills';
-import Proyects from '../Proyects/Proyects';
+import Projects from '../Projects/Projects';
 import Contact from '../Contact/Contact';
 import ExtraProjects from '../ExtraProjects/ExtraProjects.js';
 import { FormattedMessage } from 'react-intl';
@@ -33,7 +33,7 @@ function Home() {
 
       <div className='bg-[#2a2c39] overflow-x-hidden' id='proyects'>
         <section className='max-w-6xl py-24 mx-auto'>
-          <Proyects />
+          <Projects />
         </section>
       </div>
 

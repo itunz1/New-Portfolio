@@ -57,10 +57,10 @@ export function HeroSection() {
                 />
                 <div className='flex gap-10 mt-5 sm:gap-16'>
                     <Link to='https://github.com/itunz1' target="_blank"> 
-                        <FaGithub className='text-white text-7xl sm:text-8xl'/>
+                        <FaGithub className='text-white text-7xl sm:text-8xl hover:scale-[1.05] hover:transition delay-3000'/>
                     </Link>
                     <Link to='https://www.linkedin.com/in/jose-lezama/' target="_blank">
-                        <FaLinkedin className='text-white text-7xl sm:text-8xl'/>
+                        <FaLinkedin className='text-white text-7xl sm:text-8xl hover:scale-[1.05] hover:transition delay-3000'/>
                     </Link>
                 </div>
             </div>
