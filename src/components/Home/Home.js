@@ -31,7 +31,7 @@ function Home() {
         </section>
       </div>
 
-      <div className='bg-[#2a2c39] overflow-x-hidden' id='proyects'>
+      <div className='bg-[#2a2c39] overflow-x-hidden' id='projects'>
         <section className='max-w-6xl py-24 mx-auto'>
           <Projects />
         </section>
